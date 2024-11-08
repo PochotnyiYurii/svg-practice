@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle {
+    fill: #33CCFF;
+    stroke: #0066FF;
+    stroke-width: 5px;
+}
+
+.circle {
+    fill: #FF66CC;
+    stroke: #FF3399;
+    stroke-width: 5px;
+}
+
+.ellipse {
+    fill: #99FF66;
+    stroke: #66CC33;
+    stroke-width: 5px;
+}
+
+.square {
+    fill: #FFCC00;
+    stroke: #FF6600;
+    stroke-width: 5px;
+    animation: animate 3s infinite;
+}
+
+@keyframes animate {
+    0% {
+        fill: #1702ff;
+        stroke: #FF6600;
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(0.9);
+        
+    }
+
+    50% {
+        fill: #00CC99;
+        stroke: #3399FF;
+        transform: scale(1.1)
+    }
+
+    70% {
+        fill: #e02d3c;
+        stroke: #63ff1b;
+        transform: scale(0.9)
+    }
+
+    100% {
+        fill: #1702ff;
+        stroke: #FF6600;
+        transform: scale(1)
+    }
+}
